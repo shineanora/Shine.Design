@@ -1,0 +1,750 @@
+@font-face { 
+    font-family: "GothamProLight";
+    src: url("/shine design/fonts/GothamProLight/GothamProLight.eot");
+    src: url("/shine design/fonts/GothamProLight/GothamProLight.eot?#iefix")format("embedded-opentype"),
+    url("/shine design/fonts/GothamProLight/GothamProLight.woff") format("woff"),
+    url("/shine design/fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face { 
+    font-family: "GothamProLightItalic";
+    src: url("/shine design/fonts/GothamProLightItalic/GothamProLightItalic.eot");
+    src: url("/shine design/fonts/GothamProLightItalic/GothamProLightItalic.eot?#iefix")format("embedded-opentype"),
+    url("/shine design/fonts/GothamProLightItalic/GothamProLightItalic.woff") format("woff"),
+    url("/shine design/fonts/GothamProLightItalic/GothamProLightItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face { 
+    font-family: "RalewayBold";
+    src: url("/shine design/Raleway/RalewayBold/RalewayBold.eot");
+    src: url("/shine design/Raleway/RalewayBold/RalewayBold.eot?#iefix")format("embedded-opentype"),
+    url("/shine design/Raleway/RalewayBold/RalewayBold.woff") format("woff"),
+    url("/shine design/Raleway/RalewayBold/RalewayBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+body {
+    margin: 0;
+    font-family: "GothamProLight", sans-serif;
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 3%;
+}
+
+nav {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "RalewayBold", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 73%;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+    margin: 0 30px;
+    transition: 0.5s;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    color: #FC9FCF;
+}
+
+.buy {
+    border: #FC9FCF 2px solid;
+    border-radius: 50px;
+    background: none;
+    color: #FC9FCF;
+    font-family: "RalewayBold", sans-serif;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.buy:hover {
+    background-color: #FC9FCF;
+    color: white;
+}
+
+.open {
+    display: flex !important;
+}
+
+.burger {
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 20px;
+}
+
+.burger span {
+    width: 30px;
+    height: 2px;
+    transform: scale(1);
+    background-color: #FC9FCF;
+}
+
+.burger::before, .burger::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #FC9FCF;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+    top: 0;
+}
+
+.burger::after {
+    bottom: 0;
+}
+
+.burger.active span {
+    transform: scale(0);
+}
+
+.burger.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+
+main {
+    padding: 0 3%;
+}
+
+.aboutme {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 100px 0;
+}
+
+.aboutimg {
+    height: 100%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+h1 {
+    font-size: 175px;
+    color: #F664AF;
+    font-family: "RalewayBold", sans-serif;
+    margin: 70px 0;
+}
+
+.about {
+    font-family: "GothamProLight", sans-serif;
+    margin-top: 0;
+    width: 95%;
+}
+
+.aboutp {
+    font-style: italic;
+    text-decoration: none;
+    color: #FC9FCF;
+    margin-bottom: 1em;
+}
+
+.whyme {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-size: 60px;
+    color: #FC9FCF;
+    font-family: "RalewayBold", sans-serif;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.argument {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arg {
+    width: 21%;
+}
+
+span {
+    text-decoration: underline 1px;
+    color: #F664AF;
+}
+
+.work_stages {
+    margin-bottom: 100px;
+}
+
+.stages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#stages {
+    margin-top: 40px;
+}
+
+.stage {
+    width: 30%;
+    height: 200px;
+    border: #FC9FCF solid 1px;
+    border-radius: 21px;
+    padding: 20px 0 0 20px;
+}
+
+.stage_p {
+    width: 95%;
+}
+
+#arrow {
+    display: none;
+}
+
+.portfolio {
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #F664AF;
+    margin-bottom: 50px;
+    font-family: "RalewayBold", sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-slider {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.project {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.buttonMore {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.more {
+    background-color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-family: "GothamProLight", sans-serif;
+    color: #F664AF;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.morep {
+    margin-right: 10px;
+}
+
+.more:hover {
+    text-decoration: underline 1px;
+}
+
+h4 {
+    color: #F664AF;
+    margin-bottom: 50px;
+    font-family: "RalewayBold", sans-serif;
+    font-size: 25px;
+}
+
+.services {
+    margin-bottom: 30px;
+}
+
+.servAll {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+}
+
+.servp {
+    margin-bottom: 70px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.details {
+    margin-bottom: 60px;
+    border: #FC9FCF 2px solid;
+    border-radius: 50px;
+    background: none;
+    color: #FC9FCF;
+    font-family: "RalewayBold", sans-serif;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.details:hover {
+    background-color: #FC9FCF;
+    color: white;
+}
+
+#btn {
+    display: none;
+}
+
+.order {
+    margin-bottom: 100px;
+    background-color: #FC9FCF;
+    display: flex;
+    padding: 0 3%;
+    overflow: hidden;
+}
+
+.ord {
+    display: flex;
+    font-size: 20px;
+    animation: move 15s infinite;
+    animation-timing-function: linear;
+    position: relative;
+    width: 100%;
+    text-overflow: hidden;
+}
+
+#ord1::before {
+    content: 'Для оформления заказа заполните форму обратной связи со мной';
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    left: -100%;
+}
+
+#ord2::after {
+    content: 'Для оформления заказа заполните форму обратной связи со мной';
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(-100%);
+    }
+      100% {
+        transform: translateX(100%);
+    }
+}
+
+.order_p {
+    color: white;
+    margin: 20px 20px;
+    white-space: nowrap;
+}
+
+.contacts {
+    margin-bottom: 100px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.icons {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 47%;
+}
+
+#tg {
+    margin-top: 70px;
+}
+
+#inst {
+    margin-top: 150px;
+}
+
+.icon {
+    transition: 0.5s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.contText {
+    display: flex;
+    flex-direction: column;
+}
+
+.contP {
+    color: black;
+    margin-bottom: 30px;
+    margin-top: 90px;
+    transition: 0.3s;
+}
+
+.contP:hover {
+    color: #F664AF;
+}
+
+.feed {
+    border: #FC9FCF 2px solid;
+    border-radius: 50px;
+    background: none;
+    color: #FC9FCF;
+    font-family: "RalewayBold", sans-serif;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.feed:hover {
+    background-color: #FC9FCF;
+    color: white;
+}
+
+footer {
+    padding: 20px;
+    padding-left: 3%;
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 16px;
+    }
+
+    body.lock {
+        overflow: hidden;
+    }
+    
+    header {
+        padding:  10px;
+    }
+
+    .logoimg {
+        width: 50%;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 70px 0;
+        animation: burgerAnimation 0.4s;
+        background-color: white;
+    }
+
+    @keyframes burgerAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    nav ul {
+        flex-direction: column;
+        row-gap: 30px;
+        margin: 0;
+    }
+
+    li:active {
+        transform: scale(1.1);
+    }
+
+    nav .buy {
+        flex-direction: column;
+        row-gap: 30px;
+        margin: 20px 70px;
+    }
+
+    .buy:active {
+        background-color: #FC9FCF;
+        color: white;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    .aboutme {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .aboutimg {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 105px;
+        white-space: nowrap;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .whyme, .work_stages, .contacts {
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 40px;
+        white-space: nowrap;
+    }
+
+    .argument {
+        flex-wrap: wrap;
+    }
+
+    .arg {
+        width: 50%;
+    }
+
+    .stages {
+        flex-direction: column;
+    }
+
+    #stages {
+        margin-top: 0;
+    }
+
+    .stage {
+        width: 335px;
+        margin-top: 13px;
+    }
+
+    .icon_stage {
+        transform: rotate(90deg);
+        margin-top: 12px;
+    }
+
+    #arrow {
+        display: flex;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .more {
+        margin-bottom: 50px;
+    }
+
+    .more:active {
+        text-decoration: underline 1px;
+    }
+
+    .services {
+        margin-bottom: 50px;
+    }
+
+    .servp {
+        margin-bottom: 34px;
+    }
+
+    .details {
+        display: none;
+    }
+
+    .details:active {
+        background-color: #FC9FCF;
+        color: white;
+    }
+
+    .a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btn {
+        display: flex;
+        border: #FC9FCF 2px solid;
+        border-radius: 50px;
+        background: none;
+        color: #FC9FCF;
+        font-family: "RalewayBold", sans-serif;
+        padding: 12px 20px;
+        font-size: 18px;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    #btn:hover {
+        background-color: #FC9FCF;
+        color: white;
+    }
+
+    .order {
+        margin-bottom: 50px;
+    }
+
+    .ord {
+        margin-right: 100%;
+    }
+
+    #ord1::before {
+        content: 'форму обратной связи со мной';
+    }
+
+    #ord2 {
+        content: '';
+    }
+
+    h4 {
+        margin-bottom: 30px;
+    }
+
+    .icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .icon:active {
+        transform: scale(1.1);
+    }    
+
+    #tg {
+        margin-top: 0;
+    }
+
+    #inst {
+        margin-top: 15px;
+    }
+
+    .contP {
+        margin-top: 9px;
+        margin-bottom: 21px;
+    }
+
+    .contP:active {
+        color: #F664AF;
+    }
+
+    .feed:active {
+        background-color: #FC9FCF;
+        color: white;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+    .logoimg {
+        width: 20%;
+    }
+
+    nav {
+        font-size: 14px;
+        white-space: nowrap;
+        width: 80%;
+    }
+
+    .buy {
+        font-size: 14px;
+    }
+
+    .aboutme {
+        margin-top: 10px;
+    }
+
+    h1 {
+        font-size: 130px;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .projects {
+        width: 100%;
+    }
+
+    .portA {
+        width: 45%;
+    }
+
+    .project {
+        width: 100%;
+    }
+}
