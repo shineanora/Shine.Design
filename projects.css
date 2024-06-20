@@ -1,29 +1,29 @@
 @font-face { 
     font-family: "GothamProLight";
-    src: url("/Shine.Design/fonts/GothamProLight/GothamProLight.eot");
-    src: url("/Shine.Design/fonts/GothamProLight/GothamProLight.eot?#iefix")format("embedded-opentype"),
-    url("/Shine.Design/fonts/GothamProLight/GothamProLight.woff") format("woff"),
-    url("/Shine.Design/fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+    src: url('fonts/GothamProLight/GothamProLight.eot');
+    src: url('fonts/GothamProLight/GothamProLight.eot?#iefix') format("embedded-opentype"),
+    url('fonts/GothamProLight/GothamProLight.woff') format("woff"),
+    url('fonts/GothamProLight/GothamProLight.ttf') format("truetype");
     font-style: normal;
     font-weight: 300;
 }
 
 @font-face { 
     font-family: "GothamProLightItalic";
-    src: url("/Shine.Design/fonts/GothamProLightItalic/GothamProLightItalic.eot");
-    src: url("/Shine.Design/fonts/GothamProLightItalic/GothamProLightItalic.eot?#iefix")format("embedded-opentype"),
-    url("/Shine.Design/fonts/GothamProLightItalic/GothamProLightItalic.woff") format("woff"),
-    url("/Shine.Design/fonts/GothamProLightItalic/GothamProLightItalic.ttf") format("truetype");
+    src: url('fonts/GothamProLightItalic/GothamProLightItalic.eot');
+    src: url('fonts/GothamProLightItalic/GothamProLightItalic.eot?#iefix') format("embedded-opentype"),
+    url('fonts/GothamProLightItalic/GothamProLightItalic.woff') format("woff"),
+    url('fonts/GothamProLightItalic/GothamProLightItalic.ttf') format("truetype");
     font-style: italic;
     font-weight: normal;
 }
 
 @font-face { 
     font-family: "RalewayBold";
-    src: url("/Shine.Design/Raleway/RalewayBold/RalewayBold.eot");
-    src: url("/Shine.Design/Raleway/RalewayBold/RalewayBold.eot?#iefix")format("embedded-opentype"),
-    url("/Shine.Design/Raleway/RalewayBold/RalewayBold.woff") format("woff"),
-    url("/Shine.Design/Raleway/RalewayBold/RalewayBold.ttf") format("truetype");
+    src: url('Raleway/RalewayBold/RalewayBold.eot');
+    src: url('Raleway/RalewayBold/RalewayBold.eot?#iefix') format("embedded-opentype"),
+    url('Raleway/RalewayBold/RalewayBold.woff') format("woff"),
+    url('Raleway/RalewayBold/RalewayBold.ttf') format("truetype");
     font-style: normal;
     font-weight: 700;
 }
