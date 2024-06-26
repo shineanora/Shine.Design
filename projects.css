@@ -1,29 +1,29 @@
 @font-face { 
     font-family: "GothamProLight";
-    src: url('fonts/GothamProLight/GothamProLight.eot');
-    src: url('fonts/GothamProLight/GothamProLight.eot?#iefix') format("embedded-opentype"),
-    url('fonts/GothamProLight/GothamProLight.woff') format("woff"),
-    url('fonts/GothamProLight/GothamProLight.ttf') format("truetype");
+    src: url("/shine design/fonts/GothamProLight/GothamProLight.eot");
+    src: url("/shine design/fonts/GothamProLight/GothamProLight.eot?#iefix")format("embedded-opentype"),
+    url("/shine design/fonts/GothamProLight/GothamProLight.woff") format("woff"),
+    url("/shine design/fonts/GothamProLight/GothamProLight.ttf") format("truetype");
     font-style: normal;
     font-weight: 300;
 }
 
 @font-face { 
     font-family: "GothamProLightItalic";
-    src: url('fonts/GothamProLightItalic/GothamProLightItalic.eot');
-    src: url('fonts/GothamProLightItalic/GothamProLightItalic.eot?#iefix') format("embedded-opentype"),
-    url('fonts/GothamProLightItalic/GothamProLightItalic.woff') format("woff"),
-    url('fonts/GothamProLightItalic/GothamProLightItalic.ttf') format("truetype");
+    src: url("/shine design/fonts/GothamProLightItalic/GothamProLightItalic.eot");
+    src: url("/shine design/fonts/GothamProLightItalic/GothamProLightItalic.eot?#iefix")format("embedded-opentype"),
+    url("/shine design/fonts/GothamProLightItalic/GothamProLightItalic.woff") format("woff"),
+    url("/shine design/fonts/GothamProLightItalic/GothamProLightItalic.ttf") format("truetype");
     font-style: italic;
     font-weight: normal;
 }
 
 @font-face { 
     font-family: "RalewayBold";
-    src: url('Raleway/RalewayBold/RalewayBold.eot');
-    src: url('Raleway/RalewayBold/RalewayBold.eot?#iefix') format("embedded-opentype"),
-    url('Raleway/RalewayBold/RalewayBold.woff') format("woff"),
-    url('Raleway/RalewayBold/RalewayBold.ttf') format("truetype");
+    src: url("/shine design/Raleway/RalewayBold/RalewayBold.eot");
+    src: url("/shine design/Raleway/RalewayBold/RalewayBold.eot?#iefix")format("embedded-opentype"),
+    url("/shine design/Raleway/RalewayBold/RalewayBold.woff") format("woff"),
+    url("/shine design/Raleway/RalewayBold/RalewayBold.ttf") format("truetype");
     font-style: normal;
     font-weight: 700;
 }
@@ -80,6 +80,15 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+}
+
+.project {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.project:hover {
+    transform: scale(1.05);
 }
 
 footer {
